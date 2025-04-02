@@ -5,7 +5,7 @@ on:
     branches:
       - design/token
     paths:
-      - "./token/tokens/tokens.json"
+      - "token/tokens/tokens.json"
 
 jobs:
   createPullRequest:
