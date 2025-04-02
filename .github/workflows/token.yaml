@@ -14,7 +14,7 @@ jobs:
           node-version: 16
       - name: Run Token Transformer
         run: |
-          cd ./tokens
+          cd tokens
           style-dictionary build --verbose
           node ./tokens/replace-script.ts
           git config --global user.name "GitHub DimensionCo-Dev" 
