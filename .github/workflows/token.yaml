@@ -11,12 +11,13 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
       - name: Run Token Transformer
         run: |
-          cd tokens
-          style-dictionary build --verbose
+          npm i -g style-dictionary
+          cd ./token
           node ./tokens/replace-script.ts
+          style-dictionary build --verbose
           git config --global user.name "GitHub DimensionCo-Dev" 
           git config --global user.email "GitHub dev@dimension.company"
           git add .
@@ -25,6 +26,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       - name: Create Pull Request
-        run: gh pr create -B main -H design --title 'design token update' --body 'design token update'
+        run: gh pr create -B main -H design/token --title 'design token update' --body 'design token update'
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
