@@ -2,8 +2,7 @@ name: Create PR from design to main
 
 on:
   push:
-    branches:
-      - design/token
+    branches: [design/token]
 
 jobs:
   createPullRequest:
