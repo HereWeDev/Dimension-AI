@@ -1,0 +1,33 @@
+name: Create PR from design to main
+
+on:
+  push:
+    branches:
+      - design/token
+    paths:
+      - "./token/tokens/tokens.json"
+
+jobs:
+  createPullRequest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Run Token Transformer
+        run: |
+          cd ./tokens
+          style-dictionary build --verbose
+          node ./tokens/replace-script.ts
+          git config --global user.name "GitHub DimensionCo-Dev" 
+          git config --global user.email "GitHub dev@dimension.company"
+          git add .
+          git commit -m 'design: design token update'
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      - name: Create Pull Request
+        run: gh pr create -B main -H design --title 'design token update' --body 'design token update'
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
