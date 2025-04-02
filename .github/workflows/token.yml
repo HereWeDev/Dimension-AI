@@ -3,9 +3,9 @@ name: Create PR from design to main
 on:
   push:
     branches:
-      - design/token
+      - "design/token"
     paths:
-      - "token/tokens/tokens.json"
+      - "tokens/**"
 
 jobs:
   createPullRequest:
