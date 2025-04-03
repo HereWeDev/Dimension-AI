@@ -13,31 +13,33 @@ $palette-neutral-900: $palette-mode-1-neutral-900;
 $palette-neutral-000: $palette-mode-1-neutral-000;
 
 :root {
-  --background-primary: #{$design-token-light-background-primary};
-  --background-secondary: #{$design-token-light-background-secondary};
-  --background-sub: #{$design-token-light-background-sub};
-  --background-highlight: #{$design-token-light-background-highlight};
-  --border-primary: #{$design-token-light-border-primary};
-  --border-secondary: #{$design-token-light-border-secondary};
-  --text-primary: #{$design-token-light-text-primary};
-  --text-secondary: #{$design-token-light-text-secondary};
-  --general-black: #{$design-token-light-general-black};
-  --general-white: #{$design-token-light-general-white};
-  --general-red: #{$design-token-light-general-red};
-  --general-blue: #{$design-token-light-general-blue};
+  --Background-Primary: #{$design-token-light-background-primary};
+  --Background-Secondary: #{$design-token-light-background-secondary};
+  --Background-Sub: #{$design-token-light-background-sub};
+  --Background-Highlight: #{$design-token-light-background-highlight};
+  --Border-Primary: #{$design-token-light-border-primary};
+  --Border-Secondary: #{$design-token-light-border-secondary};
+  --Text-Primary: #{$design-token-light-text-primary};
+  --Text-Secondary: #{$design-token-light-text-secondary};
+  --General-Black: #{$design-token-light-general-black};
+  --General-White: #{$design-token-light-general-white};
+  --General-Red: #{$design-token-light-general-red};
+  --General-Blue: #{$design-token-light-general-blue};
+  --icon-color: #ff0000;
 }
 
 html[data-theme="dark"] {
-  --background-primary: #{$design-token-dark-background-primary};
-  --background-secondary: #{$design-token-dark-background-secondary};
-  --background-sub: #{$design-token-dark-background-sub};
-  --background-highlight: #{$design-token-dark-background-highlight};
-  --border-primary: #{$design-token-dark-border-primary};
-  --border-secondary: #{$design-token-dark-border-secondary};
-  --text-primary: #{$design-token-dark-text-primary};
-  --text-secondary: #{$design-token-dark-text-secondary};
-  --general-black: #{$design-token-dark-general-black};
-  --general-white: #{$design-token-dark-general-white};
-  --general-red: #{$design-token-dark-general-red};
-  --general-blue: #{$design-token-dark-general-blue};
+  --Background-Primary: #{$design-token-dark-background-primary};
+  --Background-Secondary: #{$design-token-dark-background-secondary};
+  --Background-Sub: #{$design-token-dark-background-sub};
+  --Background-Highlight: #{$design-token-dark-background-highlight};
+  --Border-Primary: #{$design-token-dark-border-primary};
+  --Border-Secondary: #{$design-token-dark-border-secondary};
+  --Text-Primary: #{$design-token-dark-text-primary};
+  --Text-Secondary: #{$design-token-dark-text-secondary};
+  --General-Black: #{$design-token-dark-general-black};
+  --General-White: #{$design-token-dark-general-white};
+  --General-Red: #{$design-token-dark-general-red};
+  --General-Blue: #{$design-token-dark-general-blue};
+  --icon-color: #fff;
 }
