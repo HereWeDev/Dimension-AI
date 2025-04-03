@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  width: 900px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+
+  border-radius: 24px;
+  background: var(--Background-Secondary);
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .input {
+      all: unset;
+      min-height: 60px;
+      width: 100%;
+      align-self: stretch;
+
+      // textarea 줄바꿈
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      overflow-y: auto;
+
+      color: var(--Text-Primary);
+      /* Body */
+      font-family: Pretendard;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+
+      &::placeholder {
+        /* Body */
+        color: var(--Text-Secondary);
+        font-family: Pretendard;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    justify-content: space-between;
+  }
+}

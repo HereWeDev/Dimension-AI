@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 0px solid var(--Background-Primary);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.square {
+  border-radius: 12px;
+
+  &:hover {
+    background: var(--Background-Highlight);
+  }
+}
+
+.round {
+  border-radius: 26px;
+}
+
+.white {
+  background: var(--Background-Primary);
+}
+
+.default {
+  background: var(--Background-Sub);
+}

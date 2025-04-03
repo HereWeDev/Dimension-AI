@@ -1,5 +1,15 @@
 @import "./styles/theme.scss";
 
-.test {
-  background-color: var(--background-secondary);
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .landing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    height: 100vh;
+  }
 }
