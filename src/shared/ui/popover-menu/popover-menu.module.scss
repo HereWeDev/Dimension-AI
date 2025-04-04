@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  padding: 6px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: absolute;
+  top: 60px;
+  right: 16px;
+
+  border-radius: 20px;
+  border: 1px solid var(--Border-Primary);
+  background: var(--Background-Secondary);
+
+  /* Pop Shadow */
+  box-shadow: 0px 46px 13px 0px rgba(0, 0, 0, 0),
+    0px 30px 12px 0px rgba(0, 0, 0, 0.01), 0px 17px 10px 0px rgba(0, 0, 0, 0.03),
+    0px 7px 7px 0px rgba(0, 0, 0, 0.04), 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
+}

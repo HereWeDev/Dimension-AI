@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 8px;
+
+  &:hover {
+    background: var(--Background-Highlight);
+  }
+
+  &:active {
+    border-radius: 8px;
+    background: var(--Background-Sub);
+  }
+}

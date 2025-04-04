@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 280px;
+  height: 100vh;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background: var(--Background-Secondary);
+
+  .top {
+    display: flex;
+    height: 60px;
+    padding: 16px 10px 16px 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      color: var(--Text-Primary, #fff);
+
+      /* Subtitle */
+      font-family: "Pretendard Variable";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 21.6px */
+    }
+
+    * {
+      display: flex;
+    }
+  }
+}
+
+.closed {
+  width: 0;
+  overflow: hidden;
+  transition: width 0.1s ease-in-out;
+}

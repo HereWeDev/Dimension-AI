@@ -1,0 +1,45 @@
+@use "../../../token/build/scss/variables" as *;
+
+$palette-neutral-100: $palette-mode-1-neutral-100;
+$palette-neutral-200: $palette-mode-1-neutral-200;
+$palette-neutral-250: $palette-mode-1-neutral-250;
+$palette-neutral-300: $palette-mode-1-neutral-300;
+$palette-neutral-400: $palette-mode-1-neutral-400;
+$palette-neutral-500: $palette-mode-1-neutral-500;
+$palette-neutral-600: $palette-mode-1-neutral-600;
+$palette-neutral-700: $palette-mode-1-neutral-700;
+$palette-neutral-800: $palette-mode-1-neutral-800;
+$palette-neutral-900: $palette-mode-1-neutral-900;
+$palette-neutral-000: $palette-mode-1-neutral-000;
+
+:root {
+  --Background-Primary: #{$design-token-light-background-primary};
+  --Background-Secondary: #{$design-token-light-background-secondary};
+  --Background-Sub: #{$design-token-light-background-sub};
+  --Background-Highlight: #{$design-token-light-background-highlight};
+  --Border-Primary: #{$design-token-light-border-primary};
+  --Border-Secondary: #{$design-token-light-border-secondary};
+  --Text-Primary: #{$design-token-light-text-primary};
+  --Text-Secondary: #{$design-token-light-text-secondary};
+  --General-Black: #{$design-token-light-general-black};
+  --General-White: #{$design-token-light-general-white};
+  --General-Red: #{$design-token-light-general-red};
+  --General-Blue: #{$design-token-light-general-blue};
+  --icon-color: #ff0000;
+}
+
+html[data-theme="dark"] {
+  --Background-Primary: #{$design-token-dark-background-primary};
+  --Background-Secondary: #{$design-token-dark-background-secondary};
+  --Background-Sub: #{$design-token-dark-background-sub};
+  --Background-Highlight: #{$design-token-dark-background-highlight};
+  --Border-Primary: #{$design-token-dark-border-primary};
+  --Border-Secondary: #{$design-token-dark-border-secondary};
+  --Text-Primary: #{$design-token-dark-text-primary};
+  --Text-Secondary: #{$design-token-dark-text-secondary};
+  --General-Black: #{$design-token-dark-general-black};
+  --General-White: #{$design-token-dark-general-white};
+  --General-Red: #{$design-token-dark-general-red};
+  --General-Blue: #{$design-token-dark-general-blue};
+  --icon-color: #fff;
+}

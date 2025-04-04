@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  height: 60px;
+  padding: 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  justify-content: flex-end;
+
+  background: var(--Background-Primary);
+}
+
+.space_between {
+  justify-content: space-between;
+}
